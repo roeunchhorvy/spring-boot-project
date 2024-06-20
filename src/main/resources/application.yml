@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: course-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1234
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  security:
+    jwt:
+      secret-key: 3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0adfg43gdfg
+      expiration-time: 3600000  # 1 hour in milliseconds
+server:
+  port: 8181
